@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Set background to black */
+}
+
+.container {
+    width: 80%;
+    height: 85%;
+}
+
+.scrolling-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scroll-up 10s linear infinite;
+}
+
+.scrolling-names p {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.black {
+    color: gray;
+    padding: 0 5px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.white {
+    color: white;
+
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
